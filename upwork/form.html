@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+</head>
+<style>
+  *{
+font-size: large;
+  }
+.openbtn {
+  background: lightblue;
+  font-size: 18px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.openbtn:hover {
+  background: rgb(7, 7, 119);
+  color: white;
+}
+.modal {
+  width: 600px;
+  background: #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  backdrop-filter: blur(5px);
+}
+.closebtn {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  background-color: black;
+  color: white;
+}
+.hidden{
+  display: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width:400px;
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 400px;
+}
+form .form-group {
+  margin: 10px;
+  text-align: left;
+}
+form .form-group input {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: gold;
+}
+.form .form-group label {
+  color: black;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 20px;
+}
+</style>
+<body>
+ 
+  <form class="form" action="upwork.html" method="get">
+    <div class="form-group">
+    <label for="fname">FIRSTNAME</label>
+    <input type="text" placeholder="john" id="fname"></div> <br>
+   <div class="form-group"> <label for="lname">LASTNAME</label>
+    <input type="text" placeholder="doe" id="lname"></div> <br>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="123@mail.com" id="email"> 
+    </div><br>
+    <div class="form-group">
+      <label for="password">PASSWORD</label>
+      <input type="password" placeholder="password" id="password" maxlength="20">
+       </div> <br>
+
+       <div style="display: flex; gap: 20px;">
+        <label for="male">MALE</label>
+        <input type="checkbox" id="male">
+        <label for="fmale">FEMALE</label>
+        <input type="checkbox" id="fmale">
+       </div> <br>
+
+       <div class="form-group">
+        <input type="submit" value="submit">
+       </div>
+  </form> <br>
+
+
+  
+  <button class="openbtn">CLICK ME</button>
+
+  <div class="overlay hidden"></div>
+  <div class="modal hidden">
+    <div class="modal-container">
+      <form class="formm" action="upwork.html" method="get">
+    <div class="form-group">
+    <label for="fname">FIRSTNAME</label>
+    <input type="text" placeholder="john" id="fname"></div> <br>
+   <div class="form-group"> <label for="lname">LASTNAME</label>
+    <input type="text" placeholder="doe" id="lname"></div> <br>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="123@mail.com" id="email"> 
+    </div><br>
+    <div class="form-group">
+      <label for="password">PASSWORD</label>
+      <input type="password" placeholder="password" id="password" maxlength="20">
+       </div> <br>
+
+       <div style="display: flex; gap: 20px;">
+        <label for="male">MALE</label>
+        <input type="checkbox" id="male">
+        <label for="fmale">FEMALE</label>
+        <input type="checkbox" id="fmale">
+       </div> <br>
+
+       <div class="form-group">
+        <input type="submit" value="submit">
+       </div>
+  </form><br>
+      <button class="closebtn">CLick me to end this</button>
+    </div>
+  </div>
+
+  <script>
+    const openbtn= document.querySelector('.openbtn');
+    const overlay= document.querySelector('.overlay');
+    const modal= document.querySelector('.modal');
+    const closebtn= document.querySelector('.closebtn');
+
+    openbtn.addEventListener('click', function(){
+      overlay.classList.remove('hidden');
+      modal.classList.remove('hidden');
+    });
+
+    closebtn.addEventListener('click', function(){
+      overlay.classList.add('hidden');
+      modal.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

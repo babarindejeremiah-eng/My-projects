@@ -1,0 +1,250 @@
+body {
+  background-color: white;
+  
+}
+
+.bbody {
+  margin: 10px;
+  padding: 0 90px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.littlebox {
+  background-color: rgb(87, 85, 85);
+  margin: 90px;;
+  width: 600px;
+}
+
+.bkg {
+  /* height: 300px; */
+  border-radius: 15px;
+  background: url('ApartmentCoder.jpg') no-repeat;
+  background-size: cover;
+  /* margin-top: 20px;
+  margin: 50px; */
+}
+
+.jobs {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 90px;
+  color: white;
+  font-size: large;
+  background-color: #959695;
+  border-radius: 40px;
+  padding: 2px;
+  height: 40px;
+}
+
+input {
+  color: red;
+  width: 480px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+}
+
+.one {
+  display: flexbox;
+  box-sizing: border-box;
+  align-content: center;
+  margin: 50px;
+}
+
+.boxx {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+/* .card:hover {
+  background-color: #e6f4ea !important;
+  transition: background 0.2s;
+} */
+.box {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  /* text-align: center; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 600;
+  margin: 30px;
+}
+
+.box h5 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.chn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chnn p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Navbar dropdown item hover: default text color, no border or background */
+.navbar .dropdown-menu .dropdown-item:hover, 
+.navbar .dropdown-menu .dropdown-item:focus {
+  color: inherit !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* Remove box-shadow/border from dropdown menu itself */
+.navbar .dropdown-menu {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Navbar main dropdown toggle hover: default text color, no border or background */
+.navbar .nav-link.dropdown-toggle:hover, 
+.navbar .nav-link.dropdown-toggle:focus {
+  color: #198754 !important; /* Bootstrap green */
+  background: none !important;
+  border: none !important;
+}
+
+/* Remove border, box-shadow, and background from main navbar dropdown toggles */
+.navbar .nav-link.dropdown-toggle {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* Green outline on card hover, only for the card itself */
+.card:hover {
+  outline: 1px solid #198754 !important;
+  outline-offset: 0;
+  transition: outline 0.2s;
+}
+.card:hover .card-btn {
+  background-color: #198754 !important;
+  color: #fff !important;
+  border-color: #198754 !important;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.try{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.try p {
+  padding: 0;
+  border: none;
+  background: #959695;
+}
+.first{
+  padding: 90px;
+  background: url('https://res.cloudinary.com/upwork-cloud-acquisitio…es/hourly-cost-calculator/diagonal-background.png');
+}
+
+
+footer{
+ background-color:black;
+  color: white;
+}
+.quicklinks {
+  color: red;
+}
+.cbn{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: black;
+  color: white;
+
+}
+.cbn img {
+  width: 30px;
+  height: 30px;
+}
+.lastt{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.lotus{
+  padding: 90px;
+}
+.search-box {
+  position: relative;
+      bottom: 40px;
+      left: 50px;
+      background: rgba(0,0,0,0.7); /* transparent black */
+      border-radius: 20px;
+      padding: 20px;
+      width: 600px;
+      color: white;
+      margin-left: 50px;
+      }
+
+    /* Top buttons inside search box */
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .tabs button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 25px;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Search input */
+    .search-input {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .search-input input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 25px 0 0 25px;
+      outline: none;
+    }
+    .search-input button {
+       border: none;
+      border-radius: 10px;
+      background: black;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    /* Logos at bottom */
+    .logos {
+      display: flex;
+      justify-content: space-around;
+      opacity: 0.8;
+    }
+    .logos img {
+      height: 20px;
+    }
+
+.navbar .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
